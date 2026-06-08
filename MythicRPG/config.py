@@ -16,7 +16,10 @@ class Config(object):
     TSB_CHANNEL = "TSB_Council"
     TSB_CHAT = "https://t.me/+adWYXK67LZ4xYmM9"
 
-    TOKEN = "8668525504:AAENCa7yQk8fvLRStxpK1txpMjaIkMqrp3I"
+    TOKEN = "8635504050:AAGrb98EGQKbo9EX-7a4TS6LbvXhh-6McPQ"
+    BOT_USERNAME = "EMPIRE_RPG_BOT"
+    BOT_ID = 8635504050
+
     GEMINI_API_KEYS = [
         "AIzaSyDJlbuwHzR1O-eCMRgUreZiMe-PF5ATuQY",
         "AIzaSyCP_ZscbMY2SfU5PPVQZcU0FRvgBR4HinA"

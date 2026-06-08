@@ -48,9 +48,6 @@ if ENV:
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     RANKING_MONGO_URI = os.environ.get("RANKING_MONGO_URI", "mongodb://localhost:27017/")
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
-    START_IMG = os.environ.get(
-        "START_IMG", "https://res.cloudinary.com/dwadwpalt/image/upload/v1778876471/ChatGPT_Image_Mar_26_2026_02_10_08_AM_xhpnyg.png"
-    )
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "TSB_Council_Support")
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
@@ -110,7 +107,6 @@ else:
     if not DB_URI:
         DB_URI = "sqlite:///tsbssb.db"
     NO_LOAD = Config.NO_LOAD
-    START_IMG = Config.START_IMG
     STRICT_GBAN = Config.STRICT_GBAN
     SUPPORT_CHAT = Config.SUPPORT_CHAT
     TSB_CHANNEL = Config.TSB_CHANNEL

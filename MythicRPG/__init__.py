@@ -55,10 +55,6 @@ if ENV:
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "TSB_Council_Support")
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     TOKEN = os.environ.get("TOKEN", None)
-    GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", None)
-    GEMINI_API_KEYS = [x.strip() for x in os.environ.get("GEMINI_API_KEYS", "").split(",") if x.strip()] if os.environ.get("GEMINI_API_KEYS") else ([GEMINI_API_KEY] if GEMINI_API_KEY else [])
-    SIGHTENGINE_API_USER = os.environ.get("SIGHTENGINE_API_USER", None)
-    SIGHTENGINE_API_SECRET = os.environ.get("SIGHTENGINE_API_SECRET", None)
     WORKERS = int(os.environ.get("WORKERS", 8))
 
     try:
@@ -121,10 +117,6 @@ else:
     TSB_CHAT = Config.TSB_CHAT
     TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY
     TOKEN = Config.TOKEN
-    GEMINI_API_KEY = Config.GEMINI_API_KEY
-    GEMINI_API_KEYS = getattr(Config, 'GEMINI_API_KEYS', [Config.GEMINI_API_KEY] if Config.GEMINI_API_KEY else [])
-    SIGHTENGINE_API_USER = Config.SIGHTENGINE_API_USER
-    SIGHTENGINE_API_SECRET = Config.SIGHTENGINE_API_SECRET
     WORKERS = Config.WORKERS
     VIP_GROUP_IDS = set(int(x) for x in Config.VIP_GROUP_IDS) if hasattr(Config, 'VIP_GROUP_IDS') else set()
 

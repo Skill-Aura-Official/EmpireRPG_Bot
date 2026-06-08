@@ -11,8 +11,8 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/Skill-Aura-Official/SSB/stargazers"><img src="https://img.shields.io/github/stars/Skill-Aura-Official/SSB?color=FFD700&logo=github&style=for-the-badge" alt="Stars"/></a>
-<a href="https://github.com/Skill-Aura-Official/SSB/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License"/></a>
+<a href="https://github.com/Skill-Aura-Official/EmpireRPG_Bot/stargazers"><img src="https://img.shields.io/github/stars/Skill-Aura-Official/EmpireRPG_Bot?color=FFD700&logo=github&style=for-the-badge" alt="Stars"/></a>
+<a href="https://github.com/Skill-Aura-Official/EmpireRPG_Bot/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License"/></a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python" alt="Python"/></a>
 </p>
 
@@ -53,7 +53,8 @@ Age of Telegram is a fully-featured text-based RPG bot that transforms your Tele
 ### Local Setup
 ```bash
 # Clone the repository
-git clone <YOUR_REPO_URL>
+git clone https://github.com/Skill-Aura-Official/EmpireRPG_Bot.git
+cd EmpireRPG_Bot
 
 # Install dependencies
 pip install -r requirements.txt

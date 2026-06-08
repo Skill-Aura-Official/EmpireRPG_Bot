@@ -1,1 +1,1 @@
-worker: python3 -m TSBSSB
+worker: python3 -m MythicRPG

@@ -4241,3 +4241,11 @@ ConnectionError: Connection to Telegram failed 5 time(s)
 2026-06-08 18:27:05,869 - INFO - MythicRPG - [Economy] Daily coin minting job scheduled for 00:00 UTC.
 2026-06-08 18:27:06,543 - INFO - MythicRPG - Successfully loaded modules: ['arena', 'bounty', 'colosseum', 'consumables', 'economy', 'empire', 'error_handler', 'forge', 'guilds', 'heroes', 'leaderboard', 'menu', 'smuggler', 'stealth', 'warfare', 'worldboss']
 2026-06-08 18:27:34,503 - INFO - MythicRPG - Using long polling.
+2026-06-08 19:02:05,139 - INFO - MythicRPG - Not loading: ['tagall']
+2026-06-08 19:02:05,140 - INFO - MythicRPG - Modules to load: ['arena', 'bounty', 'colosseum', 'consumables', 'economy', 'empire', 'error_handler', 'forge', 'guilds', 'heroes', 'leaderboard', 'menu', 'smuggler', 'stealth', 'warfare', 'worldboss']
+2026-06-08 19:02:05,428 - INFO - MythicRPG - [PostgreSQL] Connecting to database......
+2026-06-08 19:02:05,436 - INFO - MythicRPG - [PostgreSQL] Connection successful, session started.
+2026-06-08 19:02:05,743 - INFO - MythicRPG - [RankingDB] Connected to dedicated Ranking MongoDB.
+2026-06-08 19:02:05,817 - INFO - MythicRPG - [Economy] Daily coin minting job scheduled for 00:00 UTC.
+2026-06-08 19:02:05,881 - INFO - MythicRPG - Successfully loaded modules: ['arena', 'bounty', 'colosseum', 'consumables', 'economy', 'empire', 'error_handler', 'forge', 'guilds', 'heroes', 'leaderboard', 'menu', 'smuggler', 'stealth', 'warfare', 'worldboss']
+2026-06-08 19:02:19,168 - INFO - MythicRPG - Using long polling.

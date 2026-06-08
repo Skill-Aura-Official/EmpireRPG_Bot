@@ -6,8 +6,8 @@ class Config(object):
     API_HASH = "cc634ffcf107f2b4fcb7d37ed618de99"
 
     DATABASE_URL = ""  # A sql database url from elephantsql.com
-    MONGO_DB_URI = "mongodb+srv://AOT:AGEOFTG@ageoftelegram.0btkrvk.mongodb.net/?appName=Ageoftelegram"
-    RANKING_MONGO_URI = "mongodb://localhost:27017/"  # Dedicated ranking DB — replace with production URI
+    MONGO_DB_URI = ""
+    RANKING_MONGO_URI = ""
     EVENT_LOGS = -1003928121906
     START_IMG = "https://res.cloudinary.com/dwadwpalt/image/upload/v1778876471/ChatGPT_Image_Mar_26_2026_02_10_08_AM_xhpnyg.png"
 
@@ -16,9 +16,9 @@ class Config(object):
     TSB_CHANNEL = "TSB_Council"
     TSB_CHAT = "https://t.me/+adWYXK67LZ4xYmM9"
 
-    TOKEN = "8635504050:AAGrb98EGQKbo9EX-7a4TS6LbvXhh-6McPQ"
-    BOT_USERNAME = "EMPIRE_RPG_BOT"
-    BOT_ID = 8635504050
+    TOKEN = ""
+    BOT_USERNAME = ""
+    BOT_ID = 0
 
 
 

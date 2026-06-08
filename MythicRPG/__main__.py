@@ -35,7 +35,6 @@ from MythicRPG import (
     BOT_USERNAME,
     LOGGER,
     OWNER_ID,
-    START_IMG,
     SUPPORT_CHAT,
     TSB_CHANNEL,
     TSB_CHAT,
@@ -303,13 +302,14 @@ def start(update: Update, context: CallbackContext):
                     parse_mode=ParseMode.MARKDOWN
                 )
     else:
-        update.effective_message.reply_photo(
-            START_IMG,
-            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
-                uptime
-            ),
-            parse_mode=ParseMode.HTML,
-        )
+        with open("MythicRPG/assets/start.png", "rb") as start_pic:
+            update.effective_message.reply_photo(
+                photo=start_pic,
+                caption="🏰 <b>The Empire RPG Bot is online!</b>\n<b>Uptime:</b> <code>{}</code>".format(
+                    uptime
+                ),
+                parse_mode=ParseMode.HTML,
+            )
 
 
 
@@ -734,11 +734,12 @@ def migrate_chats(update: Update, context: CallbackContext):
 def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_photo(
-                chat_id=f"@{SUPPORT_CHAT}",
-                photo=START_IMG,
-                caption=f"""
-ㅤ🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
+            with open("MythicRPG/assets/start.png", "rb") as start_pic:
+                dispatcher.bot.send_photo(
+                    chat_id=f"@{SUPPORT_CHAT}",
+                    photo=start_pic,
+                    caption=f"""
+🏰 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ᴀɴᴅ ʀᴇᴀᴅʏ ғᴏʀ ʙᴀᴛᴛʟᴇ!
 
 ┏•❅────✧❅✦❅✧────❅•┓
 ㅤ★ **ᴘʏᴛʜᴏɴ :** `{y()}`
@@ -746,8 +747,8 @@ def main():
 ㅤ★ **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
 ㅤ★ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
 ┗•❅────✧❅✦❅✧────❅•┛""",
-                parse_mode=ParseMode.MARKDOWN,
-            )
+                    parse_mode=ParseMode.MARKDOWN,
+                )
         except Unauthorized:
             LOGGER.warning(
                 f"Bot isn't able to send message to @{SUPPORT_CHAT}, go and check!"

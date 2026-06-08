@@ -9,7 +9,6 @@ class Config(object):
     MONGO_DB_URI = ""
     RANKING_MONGO_URI = ""
     EVENT_LOGS = -1003928121906
-    START_IMG = "https://res.cloudinary.com/dwadwpalt/image/upload/v1778876471/ChatGPT_Image_Mar_26_2026_02_10_08_AM_xhpnyg.png"
 
     # TSB Links
     SUPPORT_CHAT = "TSB_Council_Support"

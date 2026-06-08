@@ -20,13 +20,7 @@ class Config(object):
     BOT_USERNAME = "EMPIRE_RPG_BOT"
     BOT_ID = 8635504050
 
-    GEMINI_API_KEYS = [
-        "AIzaSyDJlbuwHzR1O-eCMRgUreZiMe-PF5ATuQY",
-        "AIzaSyCP_ZscbMY2SfU5PPVQZcU0FRvgBR4HinA"
-    ]
-    GEMINI_API_KEY = GEMINI_API_KEYS[0]
-    SIGHTENGINE_API_USER = "1812299886"
-    SIGHTENGINE_API_SECRET = "M6ghzphTyqnij6z4v6dh3W2aWdJ6Hatn"
+
 
     # TSB Hierarchy
     FOUNDER = 5988157836

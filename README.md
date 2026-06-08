@@ -67,7 +67,7 @@ git clone https://github.com/Skill-Aura-Official/SSB.git
 pip install -r requirements.txt
 
 # Run the bot
-python3 -m TSBSSB
+python3 -m MythicRPG
 ```
 
 ---

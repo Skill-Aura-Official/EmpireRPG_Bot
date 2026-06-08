@@ -39,7 +39,7 @@ class Config(object):
     WOLVES = MANAGER
 
     # VIP Groups - Permanent Premium Protection (bypass economy/trials)
-    VIP_GROUP_IDS = [-1003882113270, -1002151810999, -1002225253978]  # Add group IDs here for permanent premium
+    VIP_GROUP_IDS = []  # Add group IDs here for permanent premium
 
     # Optional fields
     BL_CHATS = []  # List of groups that you want blacklisted.
